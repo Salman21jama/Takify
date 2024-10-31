@@ -1,9 +1,9 @@
 const http = require('http');
 const taskRoutes = require('./routes/taskRoutes');
 
-const HOSTNAME= 'lacalhost'
+const HOSTNAME= 'localhost'
 const PORT=9000
- const server= hhtp.createserver((req ,res)=>{
+ const server= http.createServer((req ,res)=>{
     if (req.url.startswith('/tasks')) {
              taskRoutes(req,res) 
         
