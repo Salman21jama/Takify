@@ -39,3 +39,14 @@ exports.createTask=(req , res)=>{
 
 } 
 
+exports.updateTask=(req ,res)=>{
+    res.end(JSON.stringify({
+         message:'not yet implemented'
+    }))
+}
+
+exports.deleteTask=(req ,res)=>{
+     res.end(JSON.stringify({
+         message:'not yet implemented'
+}))
+}
