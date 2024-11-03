@@ -4,7 +4,8 @@ const taskRoutes = require('./routes/taskRoutes');
 const HOSTNAME= 'localhost'
 const PORT=9000
  const server= http.createServer((req ,res)=>{
-    if (req.url.startswith('/tasks')) {
+    if (req.url.startsWith('/tasks')) {
+
              taskRoutes(req,res) 
         
     } else{
@@ -17,5 +18,6 @@ const PORT=9000
  });
 
  server.listen(PORT,HOSTNAME,()=>{
-    console.log('server running on port ${PORT}')
- })
+    console.log(`Server running on port ${PORT}`)
+
+ });

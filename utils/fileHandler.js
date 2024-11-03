@@ -2,7 +2,7 @@ const fs= require('fs');
 const path =require('path');
 
 const filepath= './data/tasks.json';
-exports. writeTasksToFile=(tasks)=>{
+exports. writeTasksToFile=(data)=>{
     fs.writeFileSync(filepath , JSON.stringify(tasks))
 }
 exports. readTasksFromFile=()=>{
